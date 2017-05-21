@@ -1,0 +1,15 @@
+bin\spark-class org.apache.spark.deploy.master.Master
+这一句是设置master，输入之后会有一个spark地址
+bin\spark-class org.apache.spark.deploy.worker.Worker spark://192.168.1.104:7077 -c 1 -m 512M
+这句话是注册worker -c是使用的核数，-m是内存
+bin\spark-shell -master spark://192.168.1.100:7077
+这个是运行spark-shell ，记得spark的url地址都换成你自己的地址
+
+
+d:
+cd D:\spark-2.1.0-bin-hadoop2.7
+
+
+http://169.254.100.67:8080
+
+bin\spark-shell --master spark://169.254.100.67:7077
